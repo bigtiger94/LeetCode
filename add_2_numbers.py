@@ -9,6 +9,7 @@ class Solution:
         l1_str = ''
         l2_str = ''
         
+        # convert type integer to string
         while(l1.next != None):
             l1_str = str(l1.val) + l1_str
             l1 = l1.next
@@ -19,10 +20,12 @@ class Solution:
             l2 = l2.next    
         l2_str = str(l2.val) + l2_str
         
+        # sum
         listsum = int(l1_str) + int(l2_str)
         
-        
+        # reverse order
         templist = str(listsum)[::-1]
+        
         
         firstnode = ListNode()
         list_out = firstnode
